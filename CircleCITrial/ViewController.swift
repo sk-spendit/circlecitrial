@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func clickMeButtonPressed(sender: UIButton) {
+        let alert = UIAlertController(title: "Hurra", message: "Danke für das Klicken auf den Button", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+        showViewController(alert, sender: self)
+    }
 
 }
 
